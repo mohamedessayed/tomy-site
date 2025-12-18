@@ -7,7 +7,7 @@ function BaseLayout() {
   
   <Header />
 
-  <main className="px-3">
+  <main className="px-3 dark:bg-black">
 
     <Outlet />
 

@@ -5,12 +5,12 @@ import Checkout from "../components/Payment/Checkout"
 function Dashboard() {
   return (
     <div className="container mx-auto">
-      <h1>
+      <h1 className="text-brown  dark:text-winter">
         Dashboard
         </h1>
 
         <div>
-          <h2 className="text-3xl font-bold my-6">UseRef</h2>
+          <h2 className="text-3xl font-bold my-6 dark:text-winter">UseRef</h2>
 
           <FocusInput />
         </div>

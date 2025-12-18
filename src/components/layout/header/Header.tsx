@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Desktop from "./Desktop";
 import Logo from "./Logo";
 import {Menu, X} from 'lucide-react';
-import Mobile from "./mobile";
+import ToggleTheme from "./ToggleTheme";
+import Mobile from "./Mobile";
 
 const Header: React.FC = ()=>{
 
@@ -17,9 +18,13 @@ const Header: React.FC = ()=>{
 
             <Desktop />
 
-            <button onClick={()=>setOpenMobile(!openMobile)} className="cursor-pointer lg:hidden text-winter">
+            <div>
+                <button onClick={()=>setOpenMobile(!openMobile)} className="cursor-pointer lg:hidden text-winter">
                 {openMobile?<X size={28} />:<Menu size={28} />}
             </button>
+
+            <ToggleTheme />
+            </div>
 
         </div>
 
